@@ -106,6 +106,7 @@ dishRouter.route('/:dishId/comments')
     Dishes.findById(req.params.dishId)
     .then((dish) => {
         if (dish != null) {
+            console.log("Posting new comment");
             console.log(dish);
             req.body.author = req.user._id;
             console.log(req.body);

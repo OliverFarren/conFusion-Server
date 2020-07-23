@@ -21,7 +21,7 @@ npm install package.json
 
 This will install all the packages needed to succesfully start up the application.
 
-You will also need to go and install **Mongoose Database** as we are using Mongo for our backend database.
+You will also need to go and install **Mongoose Database** as we are using Mongo for our backend database. There is a free version of MongoDB called MongoDB Community Server that can be downloaded from https://www.mongodb.com/ 
 
 Once install, type:
 

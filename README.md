@@ -10,6 +10,12 @@ The project uses NodeJS, Express and MongoDB
 to start using this application, go to your terminal, in the root directory of this project and type:
 
 ```
+git clone https://github.com/OliverFarren/conFusionServer
+```
+
+Next you will need to install all the packages:
+
+```
 npm install package.json
 ```
 

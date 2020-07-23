@@ -12,7 +12,6 @@ to start using this application, go to your terminal, in the root directory of t
 ```
 git clone https://github.com/OliverFarren/conFusionServer
 git clone https://github.com/OliverFarren/conFusion-mongoDB
-
 ```
 
 Next you will need to install all the packages:

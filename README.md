@@ -11,6 +11,8 @@ to start using this application, go to your terminal, in the root directory of t
 
 ```
 git clone https://github.com/OliverFarren/conFusionServer
+git clone https://github.com/OliverFarren/conFusion-mongoDB
+
 ```
 
 Next you will need to install all the packages:
@@ -23,10 +25,20 @@ This will install all the packages needed to succesfully start up the applicatio
 
 You will also need to go and install **Mongoose Database** as we are using Mongo for our backend database. There is a free version of MongoDB called MongoDB Community Server that can be downloaded from https://www.mongodb.com/ 
 
-Once install, type:
+Once installed, add mongo to the Windows PATH:
+
+1. Get the path to bin ~ : C:\Program Files\MongoDB\Server\4.0\bin
+2. Press the Windows key, type _env_, select _Edit the system environment variables_
+3. On the _Advanced_ tab, click _Environment Variables_
+4. In the _User variables for xxxx_ section, select _path_ and then click the _Edit..._ button
+5. Click _New_ and paste your path with a trailing slash, e.g. _C:\Program Files\MongoDB\Server\4.0\bin\_
+6. Click _Ok_,_Ok_,_Ok_ and then restart your command window
+
+
+Navigate to the confusion-mongoDB and type:
 
 ```
-mongod --dbpath="<path>\data" --bind_ip 127.0.0.1
+./start_db.sh
 ```
 
 Once your Mongo database ie sucessfully running, open up a new terminal and type:
@@ -36,18 +48,6 @@ npm start
 ```
 
 This will successfully run the server side application on https://localhost:3443/
-
-### Populate Mongo Database
-
-When you first start your application, the Mongo database will be empty. e need to populate it with the compulsory data so that we can run our client side React application successfully.
-
-To do this, I have provided a folder in the root directory of the project called populate_database. Inside that folder, I have added three JSON files that contain the data that we need.
-
-Use those files to add data for the following components
-
-- Dishes
-- Leaders
-- Promotions
 
 ### Populate via Postman
 To add data to the Mongo database via Postman, perform the following steps
